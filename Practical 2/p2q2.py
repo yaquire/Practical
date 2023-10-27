@@ -1,10 +1,17 @@
 border = '-'
 print(border*50)
 
-mass = float(input('Please Enter your mass/weight in (kg): '))
-height = float(input('Please Enter your height in (m): '))
+format = input('Please Enter if you want to use imperial(I) or Metric(M): ')
 
-bodyMassIndex = round(mass/(height*height),1)
+if format == 'I' or format == 'i':
+    massI = float(input('Please Enter your mass/weight in (lbs): '))
+    heightI = float(input('Please Enter your height in (inchs): '))
+    bodyMassIndex = round((703*massI/(heightI*heightI)),1)
+
+else:
+    massM = float(input('Please Enter your mass/weight in (kg): '))
+    heightM = float(input('Please Enter your height in (m): '))
+    bodyMassIndex = round((massM/(heightM*heightM)),1)
 
 
 print(border*50)
