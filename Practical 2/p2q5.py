@@ -11,7 +11,14 @@ if seaterType == 's' or seaterType == 'S':
 else:
     rate = 7.8
 
-rentalFee = rate*duration
 
-print('Your total cost will be:',rentalFee)
+
+if duration >= 3:
+    discountRate = .3
+else:
+    discountRate = 0
+
+rentalFee = rate*duration*(1-discountRate)
+
+print('Your total cost will be:',round(rentalFee,2))
 print(border*50)
