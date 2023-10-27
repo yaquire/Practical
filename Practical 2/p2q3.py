@@ -7,11 +7,11 @@ print(border*50)
 
 if score>= 80:
     grade = 'A'
-elif score<80 and score>=70:
+elif score>=70:
     grade = 'B'
-elif score<70 and score>=60:
+elif score>=60:
     grade = 'C'
-elif score<60 and score>=50:
+elif score>=50:
     grade = 'D'
 else: 
     grade = 'F'
