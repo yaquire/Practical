@@ -1,6 +1,9 @@
-##FOR LOOP
+# FOR LOOP
 
-for x in range(5):
-    number = input('Number')
+sum = 0
+for i in range(1, 6):
+    i = str(i)
+    x = int(input('number'+i+':'))
+    sum += x
 
-
+print('Sum of numbers:', sum)

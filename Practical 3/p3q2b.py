@@ -1,5 +1,5 @@
-#while Loop
-num1 = (input("number1: "))
+# while Loop
+'''num1 = (input("number1: "))
 while not type(num1) is  int: 
     try: 
         num1 = int(num1)
@@ -40,4 +40,14 @@ while not type(num5) is int:
 
 sumOFNumbers = num5 +num1 +num2 + num3 +num4
 
-print('Sum of Numbers:',sumOFNumbers)
+print('Sum of Numbers:',sumOFNumbers)'''
+count = 1
+sum = 0
+
+while count <= 5:
+    i = str(count)
+    number = int(input('number'+i+':'))
+    sum += number
+    count += 1
+
+print('Sum of numbers:', sum)
