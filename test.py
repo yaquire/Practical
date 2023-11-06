@@ -8,7 +8,4 @@ divisible = 0
 
 remainder = Num1 % Num2
 
-"""if remainder == divisible:
-    print('Thye are divisible!')
-else:
-    print('They are NOT divisible')"""
+
