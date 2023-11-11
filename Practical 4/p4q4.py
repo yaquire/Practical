@@ -15,6 +15,7 @@ print('-'*50)
 
 #For (c)
 j = 0
+
 for row in tableOfScores:
     
     for i in range(4):
@@ -22,15 +23,17 @@ for row in tableOfScores:
             print(tableOfScores[j][i]," ",tableOfScores[j][i+1])
     j+=1
 
+i=0
+j=0
 print('-'*50)
 #For (d)
-for i in range(6): #one row at a time
-    for col in tableOfScores[i]: #for this row, iterate column tableOfScores
-        j=1
-        while j<3:
-            sum =int(tableOfScores[i+1][j])
-            
+for row in tableOfScores: #one row at a time
+    
+    for col in row: #for this row, iterate column marks
+        print(col," ",end="")
+        hasString = isinstance(tableOfScores[i][j],int)
+        print(hasString)
         
-        print(col,"  ",sum,end="|")
+        
     print()
-
+    
