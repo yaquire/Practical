@@ -19,9 +19,5 @@ print('-'*50)
 basketNotes = []
 basketFruits = []
 
-for i in range(len(basket)):
-    current = basket(i)
-    if current is type(str):
-        basketFruits.append(current)
-    
+
 print(basketFruits)
