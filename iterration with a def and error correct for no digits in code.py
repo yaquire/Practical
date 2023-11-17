@@ -1,5 +1,3 @@
-
-
 def printMsg (msg,times):
         for x in range(0,times):
             print(msg,x+1)
