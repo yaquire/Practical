@@ -5,14 +5,14 @@ tableOfScores =[['Name|','Math','English','Science'],
                 ['Sally',88,81,73],
                 ['Aaron',35,75,39],
                 ['Simon',65,62,77],]
-
+#For b
 print('For (b)')
 print('-'*50)
 sallyMath = tableOfScores[3][1]
 sallyName = tableOfScores[3][0]
 print(sallyName,'has scored:', sallyMath)
 print('-'*50)
-
+#For c
 print('For (c)')
 j = 0
 
@@ -25,12 +25,12 @@ for row in tableOfScores:
 
 i=0
 j=0
+
 print('-'*50)
+#For D
 print('For (d)')
 for row in tableOfScores: #one row at a time
     
     for col in row: #for this row, iterate column marks
         print(col," ",end="")
-        hasString = isinstance(tableOfScores[i][j],int)
-        print(hasString)
     
