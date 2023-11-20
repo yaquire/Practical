@@ -28,9 +28,17 @@ j=0
 
 print('-'*50)
 #For D
+
 print('For (d)')
 for row in tableOfScores: #one row at a time
-    
+    sum = 0
     for col in row: #for this row, iterate column marks
+        typeing = isinstance(col,int)
+        #print(typeing)
+        if typeing == True:
+            sum = sum + col
+            
+        avg = round(sum/3,2)
         print(col," ",end="")
-    
+    print(avg,'Average')
+    print()
