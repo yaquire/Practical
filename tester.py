@@ -1,7 +1,20 @@
-def calculator():
-    x=4
-    return x
+print('for read')
+filename = ('name_marks.csv')
+filedo = open(filename)
+data = filedo.read()
+print('data with read\n', data)
 
-number = calculator()
+print('for realine')
+filedo = open(filename)
+data = filedo.readline()
+print('data for readline',data)
+data = filedo.readline()
+print('data for readline',data) 
 
-print(number)
+
+filedo = open(filename)
+print('For readlines')
+data = filedo.readlines()
+print('data for realines', data)
+asd = type(data[1][2])
+print(asd)
