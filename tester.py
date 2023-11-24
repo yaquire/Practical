@@ -1,5 +1,16 @@
-x = 5
-while(True):
-    print('A'+7+8)
-    if x==5:
-        print("correct")
+print('for read')
+filename = ('name_marks.txt')
+filedo = open(filename)
+data = filedo.read()
+print('data with read\n', data)
+
+print('for realine')
+filedo = open(filename)
+data = filedo.readline()
+print('data for readline',data)
+data = filedo.readline()
+print('data for readline',data) 
+
+filedo = open(filename)
+data = filedo.readline()
+print('data for readline',data) 
