@@ -1,17 +1,38 @@
-def getInput():
-    numeroUno = input('Please Enter the 1st integer: ')
-    numeroDos = input('Please Enter the 2nd integer: ')
-
+def getInput(number):
+    numero = input('Please Enter the '+number+' integer: ')
+    
     while True:
-        try:
-            numeroUno = int(numeroUno)
-        except ValueError:
-            numeroUno = input('Please Enter the 1st INTEGER: ')
+        if numero.isdigit():
+            break
+        else:
+            numero = input('Please Enter the an INTEGER: ')
+    return numero
 
-    while True:
-        try:
-            numeroDos = int(numeroDos)
-        except ValueError:
-            numeroDos = input('Please Enter the 2st INTEGER: ')
+def findMax(num1,num2):
+
+    num1 = int(num1)
+    num2 = int(num2)
+    print(type(num1))
+    print(type(num2))
+    if num1>num2:
+        results = "1st number is bigger"
+
+    elif num1<num2:
+        results = "2nd number is bigger"
+
+    elif num1 == num2:
+        results = "The 2 numbers are equal"
+    else:
+        results = "ERROR"
+
+    return results
 
 
+
+numeroUno =   getInput('1st')        
+numeroDos = getInput('2nd')
+
+print(findMax(numeroUno,numeroDos))
+
+
+#ISSUE WITH def findMAX()

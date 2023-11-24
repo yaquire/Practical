@@ -1,5 +1,7 @@
-x = 5
-while(True):
-    print('A'+7+8)
-    if x==5:
-        print("correct")
+def calculator():
+    x=4
+    return x
+
+number = calculator()
+
+print(number)
