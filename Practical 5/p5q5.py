@@ -18,6 +18,7 @@ def choosePattern():
     patternChose = input('Please chose the pattern: ')
 
     
+    
 
 
 
