@@ -9,8 +9,19 @@ def populateDictonary(filename):
         list.append(x)
     print(list)
 
+    for item in list:
+        item[1].replace('\n','')
+        key = item[0]
+        hole = item[1]
+        dict[key]=hole
+    print(dict)
+
 def translateWord(word):
-    print()
+    presece = word in dict
+    if presece == 'False':
+        print('word not found')
+    elif presece =='True':
+        print('Your translated word is:'+dict[word])
 def removeWord(word):
     print()
 
@@ -32,7 +43,7 @@ while True:
     if choice=='Q':
         break
     else:
-        if choice =='P':
+        if choice =='T':
             word = input('Please enter the word to be translated:')
             translateWord(word)
         elif choice == 'R':
