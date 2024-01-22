@@ -7,23 +7,29 @@ def populateDictonary(filename):
     for item in data:
         x = item.split(' ')
         list.append(x)
-    print(list)
+    #print(list)
 
     for item in list:
         item[1].replace('\n','')
         key = item[0]
         hole = item[1]
         dict[key]=hole
-    print(dict)
+    #print(dict)
 
 def translateWord(word):
     presece = word in dict
-    if presece == 'False':
-        print('word not found')
-    elif presece =='True':
+    #print(presece)
+    if presece ==True:
         print('Your translated word is:'+dict[word])
+    else:
+        print('word not found')
 def removeWord(word):
-    print()
+    presece = word in dict
+    if presece == True:
+        del dict[word]
+        print('Word Found; Termination Completed')
+    else:
+        print('Word Not Found; Nothing to Delete')
 
 
 
