@@ -15,10 +15,6 @@ def removeWord(word):
     print()
 
 
-
-
-
-
 #main code
 #prompt user for file name of translations
 filename = input('Please Enter the file name:')
